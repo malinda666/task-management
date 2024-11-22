@@ -3,7 +3,7 @@ import { Badge } from "../ui/badge";
 import { Record } from "iconsax-react";
 
 const StatusRenderer = ({ value }: { value: Status }) => {
-  switch (value.toLowerCase()) {
+  switch (value?.toLowerCase()) {
     case "todo":
       return (
         <Badge variant="plain" className="items-center">
@@ -29,7 +29,7 @@ const StatusRenderer = ({ value }: { value: Status }) => {
     default:
       return (
         <Badge>
-          • <span>{value}</span>
+          • <span>N/A</span>
         </Badge>
       );
   }

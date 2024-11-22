@@ -31,8 +31,8 @@ export default function TaskItem({ task, index, column }: TaskItemProps) {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
 
   const shoudShowTimeRemaining =
-    (task.priority === "High" || task.priority === "Medium") &&
-    task.status !== "Completed";
+    (task?.priority === "High" || task?.priority === "Medium") &&
+    task?.status !== "Completed";
 
   const handleTaskUpdate = (task: Task) => {
     dispatch(updateTask({ id: task.id, updates: task }));

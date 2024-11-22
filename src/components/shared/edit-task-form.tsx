@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { format } from "date-fns";
-import { Check } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Calendar } from "@/components/ui/calendar";
@@ -38,6 +37,7 @@ import {
   ArrowRight,
   Trash,
   DocumentText1,
+  Check,
 } from "iconsax-react";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -45,7 +45,7 @@ import { useEffect } from "react";
 import PriorityRenderer from "@/components/shared/priority-renderer";
 import { Textarea } from "@/components/ui/textarea";
 import StatusRenderer from "@/components/shared/status-renderer";
-import TaskInputWrapper from "./shared/task-input-wrapper";
+import TaskInputWrapper from "./task-input-wrapper";
 import {
   AlertDialog,
   AlertDialogAction,

@@ -19,7 +19,7 @@ export default function TaskColumn({
   tasks,
   addTask,
 }: TaskColumnProps) {
-  const backgroundClass = `${column.color}`;
+  const backgroundClass = column.color ? `${column.color}` : "";
 
   const [isAddTaskFormOpen, setAddTaskFormOpen] = useState(false);
 

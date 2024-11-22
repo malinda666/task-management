@@ -1,5 +1,5 @@
 import React from "react";
-import TaskView from "./_components/task-view";
+import TaskView from "../../../components/shared/task-view";
 
 const TaskManagement = () => {
   return (
